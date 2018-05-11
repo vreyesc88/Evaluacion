@@ -1,0 +1,34 @@
+<% include includes/header %>
+
+<div class="container">
+    <div class="row mt-5">
+    	<div class="col-md-5">
+    		<div class="card">
+    			<div class="card-body">
+    				<form action="/actualizar/<%= data.id %>" method="post">
+                        <div class="form-group">                
+                            <input type="text" name="rfc" value="<%= data.rfc %>" class="form-control">                             
+                        </div>
+                        <div class="form-group">                
+                            <input type="text" name="principalname" value="<%= data.principalname %>" class="form-control">                             
+                        </div>
+                        <div class="form-group">                
+                            <input type="text" name="businessname" value="<%= data.businessname %>" class="form-control">                             
+                        </div>
+                        <div class="form-group">                
+                            <input type="text" name="phone" value="<%= data.phone %>" class="form-control">                             
+                        </div>
+                        <div class="form-group">                
+                            <input type="text" name="email" value="<%= data.email %>" class="form-control">                             
+                        </div>                 
+                        <button type="submit" class="btn btn-primary">
+                            ACTUALIZAR REGISTRO
+                        </button>                
+                    </form>    			
+    			</div>    			
+    		</div>    		
+    	</div>
+    </div>
+</div>
+
+<% include includes/footer %>
